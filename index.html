@@ -296,6 +296,55 @@
         padding: 15px; /* Adjust padding for smaller screens */
     }
 }
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.prof {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns for laptops */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+}
+
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding inside cards */
+}
+
+.card-image img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+}
+
+.name {
+    font-weight: bold; /* Bold name */
+    margin: 10px 0; /* Space above and below the name */
+}
+
+.fox {
+    color: gray; /* Color for position text */
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1024px) { /* iPad and smaller screens */
+    .prof {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for iPads */
+    }
+}
+
+@media (max-width: 768px) { /* Smartphones */
+    .prof {
+        grid-template-columns: 1fr; /* 1 column for smartphones */
+    }
+}
     </style>
     
 </head>
@@ -710,10 +759,10 @@
 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
     <h1 class="mb-3" style="color: darkred;"><u>Board Members</u></h1>
 </div>
-<br><br><br>
+
 
 <div class="prof">
-    <div class="card">
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/PMJnTQ7/fr-maviiri.jpg" alt="fr-maviiri" border="0"></a>
         </div>
@@ -723,9 +772,8 @@
         </div>
         
     </div>
-    <br> <br> <br> <br> 
 
-    <div class="card">
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/ncZy1jb/ccta.jpg" alt="ccta" border="0"></a>
         </div>
@@ -735,7 +783,7 @@
         </div>
     </div>
     <br> <br> <br> <br> 
-    <div class="card">
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/Wx1sBQ1/mr-alex.jpg" alt="mr-alex" border="0"></a>
         </div>
@@ -745,8 +793,8 @@
         </div>
         
     </div>
-    <br> <br> <br> <br>  
-    <div class="card">
+    
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/gmNN1LV/lawyer.jpg" alt="lawyer" border="0"></a>
         </div>
@@ -756,8 +804,8 @@
         </div>
         
     </div>
-    <br> <br> <br> <br> 
-    <div class="card">
+    
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/MNS9S8f/ssebagala.jpg" alt="ssebagala" border="0"></a>
         </div>
@@ -767,8 +815,8 @@
         </div>
        
     </div>
-    <br> <br> <br> <br> 
-    <div class="card">
+   
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/6NXhS7x/kayiwa.jpg" alt="kayiwa" border="0"></a>
         </div>
@@ -777,8 +825,8 @@
         <small class="fox">Chairman PTA.</small>
       </div>
     </div>
-    <br> <br> <br> <br> 
-    <div class="card">
+     
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/b2zHFn2/avator.jpg" alt="avator" border="0"></a>
         </div>
@@ -787,8 +835,8 @@
         <small class="fox">Member.</small>
         </div>
     </div>
-    <br> <br> <br> <br> 
-    <div class="card">
+     
+    <div class="card" style="margin-bottom: 10%;">
         <div class="card-image">
             <a><img src="https://i.ibb.co/b2zHFn2/avator.jpg" alt="avator" border="0"></a>
         </div>
